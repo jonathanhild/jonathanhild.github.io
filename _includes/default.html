@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>{{ page.title }}</title>
+  {% if page.description %}
+  <meta name="description" content="{{ page.description }}">
+  {% endif %}
+  <meta name="author" content="{{ site.author.name }}">
+  <!-- Enable responsive viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/assets/resources/syntax/syntax.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+  <link rel="icon" href="/assets/img/no_sleep_vhs.png">
+
+</head>
+
+<body>
+
+  <div class="container" id="default">
+    <div class="row">
+
+      <div class="sidebar col-12 col-lg-4 col-xl-3 p-2">
+        <div class="d-flex flex-lg-column justify-content-center align-items-center">
+          <a href="{{ site.url }}">
+            <img src="/assets/img/no_sleep_vhs.png" class="sidebar-img mx-3" />
+          </a>
+          <span class="title">{{ site.author.name }}</span>
+          <div class="d-none d-lg-block m-1">
+            <h4>{{ site.author.location }}</h4>
+          </div>
+        </div>
+        <hr class="hr-line d-none d-lg-block">
+        <h4 class="interests d-none d-lg-block my-4">
+          <p class="mx-auto w-75">{{ site.author.interests }}</p>
+        </h4>
+        <hr class="hr-line1 d-none d-lg-block">
+
+        <div class="d-flex flex-lg-column justify-content-center">
+          <div class="mx-2 my-1 my-lg-4">
+            <a href="{{ site.url }}/{{ site.resume_path}}" class="btn btn-outline-light btn-lg" role="button"
+              aria-pressed="true">Resume
+            </a>
+          </div>
+          <div class="mx-2 my-1 my-lg-4">
+            {% if site.author.github %}
+            <a href="https://www.github.com/{{ site.author.github }}" class="btn btn-outline-light btn-lg" role="button"
+              aria-pressed="true">
+              <span class="iconify i-github" data-icon="cib:github"></span>
+              <span class="d-none d-lg-inline">&nbsp;Github</span>
+            </a>
+            {% endif %}
+          </div>
+          <div class="mx-2 my-1 my-lg-4">
+            {% if site.author.linkedin %}
+            <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}" class="btn btn-outline-light btn-lg"
+              role="button" aria-pressed="true">
+              <span class="iconify i-linkedin" data-icon="brandico:linkedin"></span>
+              <span class="d-none d-lg-inline">&nbsp;Linkedin</span>
+            </a>
+            {% endif %}
+          </div>
+          <div class="mx-2 my-1 my-lg-4">
+            {% if site.author.twitter %}
+            <a href="https://www.twitter.com/{{ site.author.twitter }}" class="btn btn-outline-light btn-lg mx-auto"
+              role="button" aria-pressed="true">
+              <span class="iconify i-twitter" data-icon="brandico:twitter-bird"></span>
+              <span class="d-none d-lg-inline">&nbsp;Twitter</span>
+            </a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+
+      <div class="container col-12 col-lg-8 col-xl-9" id="content">
+        <div>
+          <ul class="nav nav-fill text-dark bg-light">
+            <li class="nav-item">
+              <a class="nav-link" href="{{ site.url }}"><span class="iconify" data-icon="fa-solid:home"
+                  data-inline="false"></span>&nbsp;Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ site.url}}/{{ site.categories_path }}"><span class="iconify"
+                  data-icon="fa-solid:folder-open" data-inline="false"></span>&nbsp;Categories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ site.url}}/{{ site.tags_path }}"><span class="iconify"
+                  data-icon="fa-solid:tag" data-inline="false"></span>&nbsp;Tags</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="container-fluid my-4" id="content">
+
+
+          {{ content }}
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="container-fluid fixed-bottom bg-light text-muted pt-3">
+    <p>Some rights reserved &copy; {{ site.time | date: '%Y' }}
+      {{ site.author.name }}. </br>
+      Created using <a class="tag-link" href="https://github.com/twbs/bootstrap"><span class="iconify i-bootstrap"
+          data-icon="fa-brands:bootstrap"></span>
+        Bootstrap 4</a> and <a class="tag-link" href="https://github.com/jekyll/jekyll">Jekyll</a>. Theme based on:
+      <a class="tag-link" href="https://github.com/talk2ankan/uno-dbyll">uno-dbyll</a> by talk2ankan.
+    </p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <script src="/assets/js/app.js"></script>
+
+</body>
+
+</html>
