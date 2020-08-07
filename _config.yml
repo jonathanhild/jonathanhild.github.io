@@ -20,9 +20,7 @@
 
 title: Jonathan Hildenbrand | Github.io
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Portfolio site and blog for a data scientist in training.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://jonathanhild.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -42,7 +40,7 @@ permalink: /:title
 # https://help.github.com/articles/migrating-your-pages-site-from-maruku
 markdown: kramdown
 
-highlighter: pygments
+highlighter: rouge
 
 paginate: 5 # pagination based on number of posts
 paginate_path: "page/:num"
