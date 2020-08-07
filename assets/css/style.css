@@ -117,6 +117,10 @@ a.page-link:hover {
 	letter-spacing: 3px;
 }
 
+.figure-caption {
+	font-size: 11px;
+}
+
 .btn-outline-dark .i-facebook {
 	color: #4267B2;
 }
