@@ -161,6 +161,16 @@ a.page-link:hover {
 
 /* resume */
 
+#resume-title {
+	margin-bottom: 2rem;
+}
+
+#resume-title a {
+	text-decoration: underline;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+}
+
 .resume-section {
 	margin-bottom: 2rem;
 }
@@ -190,6 +200,12 @@ a.page-link:hover {
 	list-style-type: square;
 }
 
+.resume-text {
+	font-size: 1.2rem;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+}
+
 .skill-group {
 	
 }
@@ -198,8 +214,8 @@ a.page-link:hover {
 	margin: .5rem;
 }
 .skill-item .iconify {
-	height: 36px;
-	width: 36px;
+	height: 48px;
+	width: 48px;
 }
 
 /* footer */
