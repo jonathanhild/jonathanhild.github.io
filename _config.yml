@@ -6,7 +6,8 @@
 # feature for the data you need to update frequently.
 #
 # For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# 'bundle exec jekyll serve'. If you change this file, please restart the server
+# process.
 #
 # If you need help with YAML syntax, here are some quick references for you:
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
@@ -19,22 +20,26 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Jonathan Hildenbrand | Github.io
+name: jonathanhild.github.io
 description: >- # this means to ignore newlines until "baseurl:"
-  Portfolio site and blog for a data scientist in training.
+  Portfolio site and blog for a data scientist and software developer.
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://jonathanhild.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+# the base hostname & protocol for your site, e.g. http://example.com
+url: "https://jonathanhild.github.io"
 
 author:
   name: Jonathan Hildenbrand
-  bio: Data scientist in training
-  interests: Data science, machine learning, NLP, GeoGuessr, and other topics
-  location: Portland, OR
-  avatar: /assets/img/no_sleep_vhs.png
-  photo: /assets/img/jonathan_square.png
+  byline: Data Scientist & Software Developer
+  bio: ""
+  interests: "Data science, machine learning, natural language processing, basketball, and other things."
+  location: Portland, Oregon
+  photo: ../assets/img/jonathan.png
+  avatar: ../assets/img/no_sleep_vhs.png
   github: jonathanhild
   linkedin: jonathanh3
   twitter: jonathanhild1
-  kaggle: jonathanhild
+  email: jonathan.hildenbrand+githubio@gmail.com
+  resume: https://github.com/jonathanhild/resume/blob/master/jonathan_hildenbrand_resume.pdf
 
 permalink: /:title
 # https://help.github.com/articles/migrating-your-pages-site-from-maruku
@@ -43,20 +48,18 @@ markdown: kramdown
 highlighter: rouge
 
 paginate: 5 # pagination based on number of posts
-paginate_path: "page/:num"
+paginate_path: "blog/page/:num"
 
 # These paths are to the main pages Jekyll-Bootstrap ships with.
 # Some JB helpers refer to these paths; change them here if needed.
 #
-categories_path: categories.html
-tags_path: tags.html
 
-resume_path: resume.html
+blog_path: blog/index.html
+categories_path: blog/categories.html
+tags_path: blog/tags.html
 
 # Build settings
-plugins:
-  - jekyll-feed
-  - jekyll-paginate
+plugins: [jekyll-feed, jekyll-paginate]
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

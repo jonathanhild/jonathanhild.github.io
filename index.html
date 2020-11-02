@@ -1,0 +1,208 @@
+---
+title: "Jonathan Hildenbrand | Github.io"
+---
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <meta name="author" content="{{ site.author.name }}">
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/assets/resources/syntax/syntax.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <link rel="icon" href="/assets/img/no_sleep_vhs.png">
+</head>
+
+<body class="landing">
+
+    <nav id="mainNavbar" class="navbar navbar-expand-md navbar-dark sticky-top">
+        <a href="{{ site.url }}" class="navbar-brand">{{ site.name }}</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNavLinks"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="mainNavLinks" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-left mr-auto">
+                <li>
+                    <a href="{{ site.url }}/{{ site.blog_path }}" class="nav-link blog my-2" role="button"
+                        aria-pressed="true" target="_blank">BLOG</a>
+
+                </li>
+                <li>
+                    <a href="{{ site.author.resume }}" class="nav-link resume my-2" role="button" aria-pressed="true"
+                        target="_blank">RESUME</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-left ml-auto">
+                {% if site.author.github %}
+                <li class="nav-item mx-1 mx-md-3">
+                    <a href="https://www.github.com/{{ site.author.github }}"
+                        class="btn btn-outline-light d-none d-md-block my-2" role="button" title="Github"
+                        aria-pressed="true" target="_blank">
+                        <span class="iconify i-github" data-icon="cib:github"></span>
+                        <span class="d-md-none">&nbsp;Github</span>
+                    </a>
+                    <a href="https://www.github.com/{{ site.author.github }}" class="nav-link d-md-none my-2"
+                        title="Github" target="_blank">
+                        <span class="iconify i-github" data-icon="cib:github"></span>
+                        <span class="d-md-none">&nbsp;Github</span>
+                    </a>
+                </li>
+                {% endif %}
+                {% if site.author.linkedin %}
+                <li class="nav-item mx-1 mx-md-3">
+                    <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}"
+                        class="btn btn-outline-light d-none d-md-block my-2" role="button" title="Linkedin"
+                        aria-pressed="true" target="_blank">
+                        <span class="iconify i-linkedin" data-icon="brandico:linkedin"></span>
+                        <span class="d-md-none">&nbsp;Linkedin</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}" class="nav-link d-md-none my-2"
+                        title="Linkedin" target="_blank">
+                        <span class="iconify i-linkedin" data-icon="brandico:linkedin"></span>
+                        <span class="d-md-none">&nbsp;Linkedin</span>
+                    </a>
+                </li>
+                {% endif %}
+                {% if site.author.twitter %}
+                <li class="nav-item mx-1 mx-md-3">
+                    <a href="https://www.twitter.com/{{ site.author.twitter }}"
+                        class="btn btn-outline-light d-none d-md-block my-2" role="button" title="Twitter"
+                        aria-pressed="true" target="_blank">
+                        <span class="iconify i-twitter" data-icon="brandico:twitter-bird"></span>
+                        <span class="d-md-none">&nbsp;Twitter</span>
+                    </a>
+                    <a href="https://www.twitter.com/{{ site.author.twitter }}" class="nav-link d-md-none my-2"
+                        title="Twitter" target="_blank">
+                        <span class="iconify i-twitter" data-icon="brandico:twitter-bird"></span>
+                        <span class="d-md-none">&nbsp;Twitter</span>
+                    </a>
+                </li>
+                {% endif %}
+            </ul>
+        </div>
+    </nav>
+
+    <section class="container-fluid px-0">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div id="headingGroup" class="text-center p-3">
+
+                    <h1 class="display-4 d-md-inline">JONATHAN<span class="slashes">//</span>HILDENBRAND</h1>
+                    <h1 class="display-4 d-none d-lg-block">JONATHAN<span class="slashes">//</span>HILDENBRAND</h1>
+                    <h1 class="display-4 d-none d-lg-block">JONATHAN<span class="slashes">//</span>HILDENBRAND</h1>
+                    <h2 class="lead my-2">{{ site.author.byline }}</h2>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img class="img-fluid" src="assets/img/chris-ried-ieic5Tq8YMk-unsplash.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid px-0">
+        <div class="row align-items-center content">
+            <div class="col-md-6 order-2 order-md-1">
+                <img src="assets/img/jason-leung-D4YrzSwyIEc-unsplash.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-6 text-center order-1 order-md-2">
+                <div class="row justify-content-center">
+                    <div class="col-10 col-lg-8 mb-5 mb-md-0 p-5">
+                        <h2 id="aboutme">ABOUT ME</h2>
+                        <hr class="hr-line my-4">
+                        <img id="photo" class="mx-auto d-block rounded-circle m-3" style="width:75px;height:75px;"
+                            src="{{ site.author.photo }}" alt="">
+                        <div class="lead">{{ site.author.bio }}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center content">
+            <div class="col-md-6 text-center">
+                <div class="row justify-content-center">
+                    <div class="col-10 col-lg-8 blurb mb-5 mb-md-0 p-5">
+                        <h2 id="interests">INTERESTS</h2>
+                        <hr class="hr-line my-4">
+                        <div class="lead">
+                            <p>{{ site.author.interests }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="assets/img/zarak-khan-LMne_PLW7No-unsplash.jpg" alt="" class="img-fluid">
+            </div>
+        </div>
+        <div class="row align-items-center content">
+            <div class="col-md-6 order-2 order-md-1">
+                <img src="assets/img/elena-kuchko-6iFihNnzqyo-unsplash.jpg" alt="something 1" class="img-fluid">
+            </div>
+            <div class="col-md-6 text-center order-1 order-md-2">
+                <div class="row justify-content-center">
+                    <div class="col-10 col-lg-8 blurb mb-5 mb-md-0 p-5">
+                        <h2 id="contact">CONTACT</h2>
+                        <hr class="hr-line my-4">
+                        <div>
+                            <span class="iconify i-location m-2" data-icon="cil:location-pin"
+                                data-inline="false"></span>
+                            <p>{{ site.author.location }}</p>
+                        </div>
+                        <div>
+                            <a href="mailto:{{ site.author.email }}" id="email">
+                                <span class="iconify" data-icon="ic:outline-email" data-inline="false"></span>
+                                <p>Email Me</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <div class="container sticky-bottom text-muted pt-5">
+        <p>&copy; {{ site.time | date: '%Y' }}
+            {{ site.author.name }} </br>
+            Created using <a class="tag-link" href="https://github.com/twbs/bootstrap"><span class="iconify i-bootstrap"
+                    data-icon="fa-brands:bootstrap"></span>
+                Bootstrap 4</a> and <a class="tag-link" href="https://github.com/jekyll/jekyll">Jekyll</a>.
+            Theme
+            based
+            on:
+            <a class="tag-link" href="https://github.com/talk2ankan/uno-dbyll">uno-dbyll</a> by talk2ankan.
+            Image <a class="tag-link" href="credits.html">credits.</a>
+        </p>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+    <!-- Toggle transparency on #mainNavbar -->
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $("#mainNavbar");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+
+</body>
+
+</html>
