@@ -32,7 +32,6 @@ image_path: assets/img
 author:
   name: Jonathan Hildenbrand
   byline: Data Scientist & Software Developer
-  bio: ""
   interests: "Data science, machine learning, natural language processing, basketball, and other things."
   location: Portland, Oregon
   photo: ../assets/img/jonathan.png
